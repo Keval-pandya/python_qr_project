@@ -5,7 +5,7 @@
 
 
 import pyqrcode as qr
-
+import qrcode 
 input_data=input("Enter url")
 qr = qrcode.QRCode(
         version=1,
