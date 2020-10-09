@@ -4,8 +4,7 @@
 # In[14]:
 
 
-import pyqrcode as qr
-
+import qrcode 
 input_data=input("Enter url")
 qr = qrcode.QRCode(
         version=1,
@@ -14,4 +13,5 @@ qr = qrcode.QRCode(
 qr.add_data(input_data)
 qr.make(fit=True)
 img = qr.make_image(fill='black', back_color='white')
-img.save('qrcode001.png')
+a=input('ENter qrname')
+img.save(a+'.png')
